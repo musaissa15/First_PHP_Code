@@ -1,0 +1,26 @@
+<?php
+$conn = mysqli_connect("localhost", "musaissa15", "sql123", "phase2");
+    ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <?php 
+    $sql = "SELECT * FROM food;";
+    $results = mysqli_query($conn, $sql);
+    $result_check = mysqli_num_rows($results);
+    if ($result_check > 0) {
+        while($row = mysqli_fetch_assoc($results)){
+            
+echo $row['food_id'] . " " . $row['food_name'] . " " . $row['food_type'];
+
+        }
+    }
+    ?>
+</body>
+</html>
