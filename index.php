@@ -26,7 +26,7 @@ $conn = mysqli_connect("localhost", "musaissa15", "sql123", "phase2");
 
 
         }
-    }m
+    }
     ?>
 
         <form method="POST" action="pdf.php" target="_blank">
