@@ -1,16 +1,19 @@
 <?php
+// connect to the database
 $conn = mysqli_connect("localhost", "musaissa15", "sql123", "phase2");
     ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
-    
-    
-    <?php 
+
+    <head>
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <?php 
     $sql = "SELECT * FROM food;";
     $results = mysqli_query($conn, $sql);
     $result_check = mysqli_num_rows($results);
@@ -23,12 +26,13 @@ $conn = mysqli_connect("localhost", "musaissa15", "sql123", "phase2");
 
 
         }
-    }
+    }m
     ?>
 
-    <form method="POST" action="pdf.php" target="_blank"> 
-        <input type="submit" name="pdf_creater" value="PDF">
-    </form>
+        <form method="POST" action="pdf.php" target="_blank">
+            <input type="submit" name="pdf_creater" value="PDF">
+        </form>
 
-</body>
+    </body>
+
 </html>
