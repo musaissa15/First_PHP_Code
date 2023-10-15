@@ -14,6 +14,7 @@ $conn = mysqli_connect("localhost", "musaissa15", "sql123", "phase2");
 
 
         <?php 
+        // sql query
     $sql = "SELECT * FROM food;";
     $results = mysqli_query($conn, $sql);
     $result_check = mysqli_num_rows($results);
